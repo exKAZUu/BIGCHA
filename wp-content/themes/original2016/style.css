@@ -1,0 +1,349 @@
+/*
+    Theme Name: original2015
+*/
+
+@charset "utf-8";
+
+/*-------------------------------------------
+all
+-------------------------------------------*/
+body {
+    font: 90%/1.8 "メイリオ","Meiryo",arial,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+    color:#333;
+    width: 
+}
+
+a{
+  color:#004ea2;
+  text-decoration:none;
+  font-size:90%;
+}
+
+/*-------------------------------------------
+header
+-------------------------------------------*/
+#header{
+  border-top: 3px solid #829521;
+  margin-bottom: 10px;
+}
+
+h1{
+  float: left;
+  margin-top: 20px;
+}
+
+.right{
+  float: right;
+  margin-top: 10px;
+}
+
+.right li {
+  float: left;
+}
+
+.right li a{
+  display:block;
+  color: #fff;
+  background: #829521;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin: 20px 5px;
+  padding:10px 20px;
+}
+
+.right li.orange_bg a {
+  background:#dd7213;
+}
+
+
+/*-------------------------------------------
+article
+-------------------------------------------*/
+article{
+ padding:0 0 50px 0; 
+}
+/*----------▼共通▼----------*/
+
+h2{
+  text-align: center;
+  margin:50px;
+}
+
+h3{
+  text-align: center;
+  font-size: 130%;
+  color: #dd7213;
+  margin: 30px 0px;
+}
+
+h4{
+  color: #dd7213;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.inner{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.orange_text{
+  color: #dd7213;
+}
+
+.blc{
+  border: 10px solid #f1eae5;
+  padding: 20px;
+  margin-top:50px;
+  background: #fff;
+}
+
+.center{
+  text-align: center;
+  margin: 30px;
+}
+
+/*----------▼catch▼----------*/
+
+#catch{
+  padding: 10px 0;
+  background: url(images/bg_top_catch.jpg)repeat-x;
+}
+
+#catch .c_inner{
+ width:1000px;
+  margin:0 auto;
+  min-height:400px;
+  position:relative;
+}
+
+#catch .c_inner > img{
+ margin:33px 0; 
+}
+
+#catch .share{
+ position:absolute;
+ top:0;
+  right:0;
+}
+
+#catch .share li{
+ float:left;
+  margin:5px;
+}
+
+/*----------▼about▼----------*/
+
+.imgleft{
+  width: 820px;
+  margin: 0 auto;
+}
+
+#about{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.imgleft img{
+  float:left;
+}
+
+.imgleft div{
+  float:right;
+  width: 450px
+}
+
+.imgleft div p{
+  margin-bottom: 20px;
+}
+
+.imgleft div a{
+  margin-right:10px;
+  display:inline-block;
+}
+
+/*----------▼point▼----------*/
+
+#point{
+  background: #faf7f5;
+  overflow: hidden;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+#point li {
+  float: left;
+  margin-right: 10px;
+}
+
+#point li div{
+  width: 240px; 
+}
+
+#point li div p{
+  color: #583939; 
+}
+
+.orange_no{
+  background: #dd7213;
+  padding:5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #fff;  
+  margin-right: 10px;
+}
+
+
+.colist li{
+  margin-left:3px;
+  margin-bottom:10px
+}
+
+.colist li:nth-child(3n){
+  margin-right:0;
+}
+
+.blc h3{
+  margin-top: 20px;
+}
+
+/*----------▼schedule▼----------*/
+
+table{
+  width:1000px;
+  margin: 0 auto;
+  background:#d8c9bc;
+  border: 2px solid #d8c9bc;
+}
+
+th{
+  background:#876140;
+  color:#fff;
+  padding:5px;
+  border: 2px solid #d8c9bc;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td{
+  text-align:center;
+  background:#fff;
+  padding:5px;
+  font-size:90%;
+  border: 2px solid #d8c9bc;
+}
+
+.blc p{
+  color: #876141;
+  font-size: 120%;
+}
+
+/*----------▼teacher▼----------*/
+
+#teacher{
+  background: #faf7f5;
+  overflow: hidden;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+#teacher .teacher01{
+  width: 300px;
+  float: left;
+  background: #fff;
+  padding:20px;
+  color: #583939;
+  font-size: 80%; 
+}
+
+#teacher h4{
+  font-size: 130%;
+  color: #876141;
+}
+
+#teacher h4 span{
+  font-size: 60%;
+}
+
+#teacher .blc{
+ width:670px;
+ float:right;
+  margin-top:0;
+}
+
+#teacher .blc li{
+ margin:10px; 
+}
+/*----------▼requirements▼----------*/
+
+#requirements img{
+  text-align: center;
+}
+
+dl{
+    overflow: hidden;
+     border: 1px solid #876140;
+   margin:10px auto;
+   width:1000px;
+   background:#876140;
+}
+
+dl:after {
+    clear: both; /* ここからclearfix処置 */
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden; /* ここまでclearfix処置 */
+}
+dl dt {
+     clear: left;
+     float: left;
+   font-size:100%;
+   width:200px;
+   text-align:right;
+     border-top: 1px solid #d8c9bc;
+   padding:10px;
+   line-height:200%;
+   margin-top: -1px;
+   color:#fff;
+}
+
+dl dd {
+     margin-left:200px;
+   text-align:left;
+   font-size:100%;
+     border-left: 1px solid #876140;
+     border-top: 1px solid #876140;
+   padding:10px;
+   line-height:200%;
+   margin-top: -1px;
+   background:#ffffff;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+
+#footer{
+  background: #829521;
+  overflow: hidden;
+  padding:20px 0;
+}
+
+.f_blc{
+  float: left;
+  margin-right:30px;
+}
+
+.f_blc p{
+  margin-bottom: 10px;  
+}
+
+.copy{
+  color: #fff;
+  margin-top: 20px;
+  font-size:90%;
+}
