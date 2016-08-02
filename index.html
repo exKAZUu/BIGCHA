@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>BIGCHA | ビッグデータプログラミングチャレンジ (BIG data Programming CHAllenge)</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="http://bigcha.net/wp-content/themes/original2015/css/reset.css">
+	<link rel="stylesheet" type="text/css" media="all" href="http://bigcha.net/wp-content/themes/original2015/style.css" />
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		
+<!-- All in One SEO Pack 2.3.8 by Michael Torbert of Semper Fi Web Design[69,82] -->
+<meta name="description"  content="BIG data programming CHAllenge (BIGCHA) は、ビッグデータの利活用により新しい価値を創出できる人材の育成を目指したコンテストです。" />
+
+<meta name="keywords"  content="bigdata,ビッグデータ,コンテスト,プログラミング,学生,enPiT,Cloud" />
+
+<!-- /all in one seo pack -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/bigcha.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://bigcha.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.4.2' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v5.5.2 - Universal enabled - https://www.monsterinsights.com/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-52540695-1', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+<link rel='https://api.w.org/' href='http://bigcha.net/wp-json/' />
+<script>
+$(function(){
+  var headH = 0;
+   $('a[href^=#]').click(function() {
+      var speed = 1000;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top - headH;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+<div id="fb-root"></div>
+<script>
+//FB
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+//TW
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>
+<script src="http://apis.google.com/js/platform.js" async defer>
+  {lang: "ja"}
+</script>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+</script>
+</head>
+
+<body class="home blog">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4&appId=1870867139805361";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+		<header id="header"><!--header-->
+			<div class="inner clearfix">
+			<h1><a href="http://bigcha.net"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo.png" alt="BIGCHA"></a></h1>
+				<div class="right clearfix">
+					<ul>
+						<li><a href="#about">BIGCHAとは？</a></li>
+						<li><a href="#requirements">2015開催概要</a></li>
+						<li><a href="https://drive.google.com/folderview?id=0B4RUQka0Zk6-MVZsLUplcGNnUVE" target="_blank">講義資料</a></li>
+						<li class="orange_bg"><a href="https://docs.google.com/forms/d/1A-IYkcHXIK2hyYaZerTl29K454n5E5Ff6HKKGP6Oj6k/viewform" target="_blank">お申込み</a></li>
+					</ul>
+				</div>
+			</div>
+		</header><!--/header-->
+		<article id="content">
+			<section id="catch"><!--catch-->
+        <div class="c_inner">
+					<img src="http://bigcha.net/wp-content/themes/original2015/images/img_header_catch.png" alt="enPiT Cloud 夏期集中講義 9/13-9/18 BIGCHA 2015 クラウドアプリケーション開発演習">
+          <ul class="share clearfix">
+          <li>
+          <div class="fb-like" data-href="http://bigcha.net/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
+          </li>
+          <li>
+          <a class="twitter-share-button" href="https://twitter.com/share" data-dnt="true" data-count="vertical">Tweet</a>
+          </li>
+          <li>
+          <div class="g-plus" data-action="share" data-href="http://bigcha.net/" data-annotation="vertical-bubble"></div>
+          </li>
+          <li>
+          <a href="http://b.hatena.ne.jp/entry/http://bigcha.net/" class="hatena-bookmark-button" data-hatena-bookmark-title="Syncer" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+          </li>
+          </ul>
+        </div>
+			</section><!--/catch-->			<section id="about"><!--about-->
+				<h2><img src="http://bigcha.net/wp-content/themes/original2015/images/img_title01.png" alt="BIGCHAとは？"></h2>
+				<h3>幅広い分野のビッグデータを扱える！<br>Hadoopプログラミングの講義を受けて、新しい・面白いアプリを開発しよう！</h3>
+				<div class="imgleft clearfix">
+					<img src="http://bigcha.net/wp-content/themes/original2015/images/img_top_catch01.jpg" alt="過去の開催写真">
+					<div><p><span class="orange_text">BIG data programming CHAllenge (BIGCHA) </span>は、ビッグデータの利活用により新しい価値を創出できる人材の育成を目指したコンテストです。</p>
+						 <p>本コンテストでは、所属の異なるチームメンバーとの交流を通して、<span class="orange_text">社会にインパクトを与えるアプリケーションの開発</span>に挑戦します！</p>
+						 <a href="#" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/btn_2013link.png" alt="2013年度開催"></a>　<a href="#" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/btn_2014link.png" alt="2014年度開催"></a>
+					</div>
+				</div>  
+			</section><!--/about-->
+			<section id="point"><!--point-->
+				<div class="inner">
+					<h2><img src="http://bigcha.net/wp-content/themes/original2015/images/img_title02.png" alt="BIGCHA2015の特徴"></h2>
+					<ul class="clearfix">
+						<li>
+							<h4><span class="orange_no">１</span>Hadoopを学ぼう</h4>
+							<img src="http://bigcha.net/wp-content/themes/original2015/images/img_catch01.jpg" alt="Hadoopを学ぼう">
+							<div>
+								<p>参加者はHadoopを用いたビッグデータ解析技術の講義を受けて、アプリケーション開発に必要な知識を学べます！</p>
+								<p>なお、本コンテストは<a href="http://www.enpit.jp/">文部科学省の教育プロジェクトenPiT</a>(*)の<a href="http://cloud.enpit.jp/">クラウド分野</a>(**)の講義でもあり、東京大学と東京工業大学の学生は単位を取得できます。</p>
+								<p>*<a href="http://www.enpit.jp/">情報技術人材育成のための実践教育ネットワーク形成事業</a></p>
+								<a href="http://cloud.enpit.jp/"><img src="http://bigcha.net/wp-content/themes/original2015/images/img_enpit.png" alt="enPiT cloud"></a>
+							</div>
+						</li>
+						<li>
+							<h4><span class="orange_no">２</span>チームで開発しよう</h4>
+							<img src="http://bigcha.net/wp-content/themes/original2015/images/img_catch02.jpg" alt="チームで開発しよう">
+							<div>
+								<p>本コンテストは大学間の交流を促すことも目的の一つです。所属が異なるメンバーとチームを組んで、新しいアプリケーションを開発しよう！</p>
+								<p>2014年度は東京大学、東京工業大学、電気通信大学、筑波大学、早稲田大学、奈良先端技術大学院大学などから受講生が集まり、大学間の垣根を超えてアプリケーション開発に挑戦しました！</p>
+							</div>
+						</li>
+						<li>
+							<h4><span class="orange_no">３</span>現場のビッグデータに触れよう</h4>
+							<img src="http://bigcha.net/wp-content/themes/original2015/images/img_catch06.jpg" alt="現場のビッグデータに触れよう">
+							<div>
+								<p>普段閲覧できないようなリアルなビッグデータを解析できます。</p>
+								<p>楽天株式会社、ヤフー株式会社、株式会社サイバーエージェント、株式会社ドワンゴ、株式会社リクルートテクノロジーズからデータ提供予定！</p>
+								</div>
+						</li>
+						<li>
+							<h4><span class="orange_no">４</span>現場のエンジニアと交流しよう</h4>
+							<img src="http://bigcha.net/wp-content/themes/original2015/images/img_catch05.jpg" alt="現場のエンジニアと交流しよう">
+							<div>
+								<p>現場の最前線で活躍するエンジニアがメンターとして参加し、各開発チームの技術的課題の解決だけでなく、現場の運用などを聞けるチャンスがあります。
+								<p>また、最終日の成果発表では、協賛企業のエンジニアから現場視点の貴重なフィードバックが貰えます！</p>
+							</div>
+						</li>
+					</ul>
+					<div class="blc">
+						<h3>協賛いただいている企業様一覧</h3>
+ 						<ul class="colist clearfix">
+							<li><a href="https://www.google.co.jp/about/careers/students/" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo_google.png" alt="google"></a></li>
+							<li><a href="http://corp.rakuten.co.jp/careers/engineering/" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo_rakuten.png" alt="楽天"></a></li>
+							<li><a href="https://www.fout.co.jp/jobs/" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo_freakout.png" alt="freakout"></a></li>
+							<li><a href="http://hr.yahoo.co.jp/fresh/engineer/" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo_yahoo.png" alt="yahoo"></a></li>
+							<li><a href="https://www.cyberagent.co.jp/techinfo/" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo_ca.png" alt="サイバーエージェント"></a></li><li><a href="http://jobs.excite.co.jp" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo_excite.png" alt="eXcite"></a></li>
+
+<li><a href="http://dwango.co.jp/recruit/" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo_dowango.png" alt="株式会社ドワンゴ"></a></li>
+<li><a href="http://jp.fujitsu.com/group/labs/" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo_fujitsu.png" alt="株式会社富士通研究所"></a></li>
+<li><a href="https://recruit.cookpad.com/" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo_cook.png" alt="クックパッド"></a></li>
+<li><a href="http://acaric.jp/" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo_akariku.png" alt="株式会社アカリク"></a></li>
+<li><a href="http://microsoft-college.jp/" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo_micro.png" alt="マイクロソフト"></a></li>
+							<li><a href="http://www.seplus.jp/sezemi/" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/logo_sezemi.png" alt="SEゼミ"></a></li>
+						</ul>
+					</div>
+				</div>
+			</section><!--/point-->
+			<section id="schedule"><!--schedule-->
+				<h2><img src="http://bigcha.net/wp-content/themes/original2015/images/img_title03.png" alt="カリキュラム内容"></h2>
+				<h3>初日でHadoopプログラミングの講義（座学）を実施<br>3日間でビッグデータを活用するアプリケーション開発</h3>
+				<table>
+				<tr>
+				  <th>日付</th>
+				  <th>8/28 (金)*</th>
+				  <th>9/13 (日)</th>
+				  <th>9/14 (月)</th>
+				  <th>9/16 (水)</th>
+				  <th>9/17 (木)</th>
+				  <th>9/18 (金)</th>
+				</tr>
+				<tr>
+				  <th>午前</th>
+				  <td>なし</td>
+				  <td>概要説明<br>チーム組み</td>
+				  <td>協賛企業のショートセッション<br>＆メンタリング<br>アプリ開発</td>
+				  <td>協賛企業のショートセッション<br>＆メンタリング<br>アプリ開発</td>
+				  <td>協賛企業のショートセッション<br>＆メンタリング<br>アプリ開発</td>
+				  <td>成果発表会</td>
+				</tr>
+				<tr>
+				  <th>ランチ</th>
+				  <td>なし</td>
+				  <td>自由行動</td>
+				  <td>自由行動</td>
+				  <td>自由行動</td>
+				  <td>自由行動</td>
+				  <td>自由行動</td>
+				</tr>
+				<tr>
+				  <th>午後</th>
+				  <td>18:00-20:30<br>★参加任意★<br>データセットの説明<br>事前課題の説明<br>（軽食提供）</td>
+				  <td>Hadoopの講義</td>
+				  <td>協賛企業のショートセッション<br>＆メンタリング<br>アプリ開発</td>
+				  <td>協賛企業のショートセッション<br>＆メンタリング<br>アプリ開発</td>
+				  <td>協賛企業のショートセッション<br>＆メンタリング<br>アプリ開発</td>
+				  <td>成果発表会<br>審査結果公表<br>表彰・企業賞贈呈<br>プチ懇親会</td>
+				</tr>
+				</table>
+				<h3>5日間のカリキュラムの他にも<br>事前課題や協賛される企業の独自勉強会に参加することが可能です。</h3>
+				<div class="inner">
+					<div class="blc">
+							<p>・*事前（8/28(金)）に任意参加のプレイベント（データセット説明やネットワーキングなど）を開催します。<br>
+							   ・講義前に事前課題を告知します。また、任意の事前学習（映像教材）も用意しています。<br>
+							   ・イベント後に希望する協賛企業が勉強会を開催（別途用意するSlackで告知）します。</p>
+					</div>
+				</div>
+			</section><!--/schedule-->
+			<section id="teacher"><!--teacher-->
+				<h2><img src="http://bigcha.net/wp-content/themes/original2015/images/img_title04.png" alt="講師・審査員一覧"></h2>
+				<div class="inner">
+					<div class="teacher01">
+							<img src="http://bigcha.net/wp-content/themes/original2015/images/img_teacher01.jpg" alt="坂本一憲">
+							<h4>坂本一憲<span>（国立情報学研究所　助教）</span></h4>
+							<p>ソフトウェアテスト、複数言語対応ソースコード解析・変形が専門。プログラミング言語、ゲーミフィケーション、競技プログラミングが好き。ゲームAIプログラミングコンテストを毎年開催しています！（CEDEC、ACM  ICPC JavaChallenge、情報処理学会 SamurAI Codingなど）主催。IPA 未踏ユース2010採択、スーパークリエイター認定。</p>
+					</div>
+					<div class="blc">
+						<h3>当日講師・審査員としてご参加頂く企業様</h3>
+						<ul>
+							<li>グーグル株式会社</li>
+							<li>楽天株式会社</li>
+							<li>株式会社フリークアウト</li>
+							<li>ヤフー株式会社</li>
+							<li>株式会社サイバーエージェント</li>
+							<li>エキサイト株式会社</li>
+							<li>株式会社ドワンゴ</li>
+							<li>株式会社富士通研究所</li>
+							<li>株式会社SEプラス</li>
+						</ul>
+					</div>
+				</div>
+			</section><!--/teacher-->
+			<section id="requirements"><!--requirements-->
+				<h2><img src="http://bigcha.net/wp-content/themes/original2015/images/img_title05.png" alt="2015開催概要"></h2>
+					<dl>
+						<dt>開催日</dt>
+						<dd>9/13・14・16・17・18の5日間</dd>
+						<dt>開催時間</dt>
+						<dd>9:30-17:00</dd>
+						<dt>場所</dt>
+						<dd>国立情報学研究所　12階　1208-1210室<br>東京都千代田区一ツ橋2-1-2（<a href="http://www.nii.ac.jp/about/access/">詳細</a>）</dd>
+						<dt>最寄り駅</dt>
+						<dd>東京メトロ半蔵門線／都営地下鉄三田線・新宿線<br>「神保町」A9出口<br>東京メトロ東西線「竹橋」1b出口<br>徒歩5分
+						</dd>
+						<dt>参加対象者</dt>
+						<dd>大学院生 (『クラウドアプリケーション開発演習』受講者は単位認定 / 未受講の学生も参加可能)</dd>
+						<dt>参加条件</dt>
+						<dd>Javaプログラミングができる<br>Linuxの基本的な操作ができる<br>※Gitなどのバージョン管理システムが利用できると開発がスムースになります。</dd>
+						<dt>持ち物</dt>
+						<dd>ノートPC / 筆記用具 / 学生証<br>※会場で電源と無線LANを用意していますが、ご自身で有線LANケーブルを準備頂くと、より快適になります。</dd>
+						<dt>注意事項</dt>
+						<dd>講義として受講する方も申込フォームからご応募下さい。応募多数の場合、単位の認定資格のある方と修士学生の方を優先して、抽選を行います。(9/7申込締切)</dd>
+					</dl>
+					<p class="center"><img src="http://bigcha.net/wp-content/themes/original2015/images/img_present.png" alt="参加者特典！全員にプレゼント！"></p>
+					<p class="center"><a href="https://docs.google.com/forms/d/1A-IYkcHXIK2hyYaZerTl29K454n5E5Ff6HKKGP6Oj6k/viewform" target="_blank"><img src="http://bigcha.net/wp-content/themes/original2015/images/bt_form.png" alt="お申込みフォームはこちら"></a></p>
+			</section><!--/requirements-->
+			</article><!--/content-->
+		<footer id="footer"><!--footer-->
+			<div class="inner clearfix">
+				<div class="f_blc">
+					<p><img src="http://bigcha.net/wp-content/themes/original2015/images/bn_enpitcloud02.png" alt="enPiT cloud"></p>
+					<p><img src="http://bigcha.net/wp-content/themes/original2015/images/bn_bigcha.png" alt="BIGCHA実行委員会"></p>
+					<p class="copy">copyright © 2015 BIGCHA all rights reserved.</p>
+				</div>
+				<div class="f_blc" style="width: 300px;">
+					<div class="fb-page" data-href="https://www.facebook.com/bigcha.net" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/bigcha.net"><a href="https://www.facebook.com/bigcha.net">BIGCHA</a></blockquote></div></div>
+				</div>
+				<div class="f_blc">
+					<a class="twitter-timeline" width="300" height="300" href="https://twitter.com/hashtag/bigcha2015" data-widget-id="625641516317278210">#bigcha2015 Tweets</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+			</div>
+		</footer><!--/footer-->
+<script type='text/javascript' src='http://bigcha.net/wp-includes/js/wp-embed.min.js?ver=4.5.3'></script>
+</body>
+</html>
