@@ -37,12 +37,21 @@ img.emoji {
 	padding: 0 !important;
 }
 .img-border {
-	display: flex;
+	display: block;
+	position: relative;
 	border: solid 1px #eed;
 	width: 300px;
 	height: 100px;
-	align-items: center;
-	justify-content: center;
+}
+.img-border img {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	max-width: 80%;
+	max-height: 80%;
 }
 </style>
 <link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.4.2.css' type='text/css' media='all' />
@@ -191,6 +200,11 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
 							<li><a href="http://hr.yahoo.co.jp/fresh/engineer/" target="_blank"><img src="wp-content/themes/original2016/images/logo_yahoo.png" alt="yahoo"></a></li>
 							<li><a href="http://dwango.co.jp/recruit/" target="_blank"><img src="wp-content/themes/original2015/images/logo_dowango.png" alt="株式会社ドワンゴ"></a></li>
 							<li><a class="img-border" href="http://corp.fumankaitori.com/recruit/" target="_blank"><img src="wp-content/themes/original2015/images/logo_fuman.png" alt="株式会社不満買取センター"></a></li>
+							<li><a href="https://www.google.co.jp/about/careers/students/" target="_blank"><img src="wp-content/themes/original2015/images/logo_google.png" alt="google"></a></li>
+							<li><a href="https://www.cyberagent.co.jp/techinfo/" target="_blank"><img src="wp-content/themes/original2015/images/logo_ca.png" alt="サイバーエージェント"></a></li>
+							<!--<li><a class="img-border" href="http://dena.com/jp/" target="_blank"><img src="wp-content/themes/original2015/images/logo_dena.png" alt="DeNA"></a></li>-->
+							<li><a class="img-border" href="http://recruit-tech.co.jp/" target="_blank"><img src="wp-content/themes/original2015/images/logo_recruit.png" alt="リクルート"></a></li>
+							<!--<li><a class="img-border" href="http://www.next-group.jp/" target="_blank"><img src="wp-content/themes/original2015/images/logo_next.png" alt="NEXT"></a></li>-->
 						</ul>
           </div>
 				</div>
