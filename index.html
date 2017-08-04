@@ -138,6 +138,44 @@ img.emoji {
 	font-size: 16px;
 	letter-spacing: 0.05em;
 }
+
+/* #b6c46e */
+section.present {
+	border-top: solid 1px transparent;
+	position: relative;
+}
+section.present img {
+	position: relative;
+	z-index: 1;
+	max-width: 200px;
+	margin: 20px;
+	border: solid 5px #b6c46e;
+	border-radius: 5px;
+}
+section.present > div {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+section.present h3 {
+	margin: 0;
+	padding: 10px 10px 10px 240px;
+	font-size: 28px;
+	text-align: left;
+	color: white;
+	background-color: #b6c46e;
+}
+section.present p {
+	border: solid 10px #b6c46e;
+	border-top-width: 0;
+	padding: 10px 0 10px 230px;
+	font-size: 24px;
+}
+section.present strong {
+	color: #fb7e2b;
+}
+
 </style>
 <link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.4.2.css' type='text/css' media='all' />
 <!-- This site uses the Google Analytics by MonsterInsights plugin v5.5.2 - Universal enabled - https://www.monsterinsights.com/ -->
@@ -384,6 +422,13 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
 			<dt>注意事項</dt>
 			<dd>講義として受講する方も申込フォームからご応募下さい。応募多数の場合、単位の認定資格のある方と修士学生の方を優先して、抽選を行います。(9/9申込締切)</dd>
 		</dl>
+		<section class="inner present">
+			<img src="images/book.jpg">
+			<div class="description">
+				<h3>参加者特典！全員にプレゼント！</h3>
+				<p>参加いただいた方には<br><strong>「Apache Spark入門」</strong>をプレゼント！
+			</div>
+		</section>
 		<p class="center">
 			<a href="https://docs.google.com/forms/d/e/1FAIpQLSfAah1hlv7H0FA0MDzrQ9WRNsV0p3eqNZeu3v79AyhG4ejnUA/viewform" target="_blank">
 				<img src="wp-content/themes/original2017/images/bt_form.png" alt="お申込みフォームはこちら">
